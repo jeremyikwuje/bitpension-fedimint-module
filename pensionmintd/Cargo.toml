@@ -1,0 +1,16 @@
+[package]
+name = "pensionmintd"
+version = "0.1.0"
+authors = ["The Bitpension Developers"]
+edition = "2023"
+description = "pensionmintd with custom module set"
+
+[[bin]]
+name = "pensionmintd"
+path = "src/pensionmintd.rs"
+
+[dependencies]
+anyhow = "1.0.66"
+pensionmintd = { workspace = true }
+tokio = { version = "1.25.0", features = ["full", "tracing"] }
+pensionmint-server = { path = "../pensionmint-server" }

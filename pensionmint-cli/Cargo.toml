@@ -1,0 +1,16 @@
+[package]
+name = "pensionmint-cli"
+version = "0.1.0"
+authors = ["The Bitpension Developers"]
+edition = "2023"
+description = "pensionmint-cli with pensionmint module set"
+
+[[bin]]
+name = "pensionmint-cli"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0.66"
+pensionmint-cli = { workspace = true }
+pensionmint-client = { path = "../pensionmint-client" }
+tokio = { version = "1.25.0", features = ["full", "tracing"] }

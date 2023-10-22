@@ -1,0 +1,14 @@
+[workspace]
+members = [
+    "pensionmintd",
+    "pensionmint-cli",
+    "pensionmint-server",
+]
+resolver = "2"
+
+[workspace.metadata]
+authors = ["The Bitpension Developers"]
+edition = "2023"
+description = "Pensionmint"
+readme = "README.md"
+repository = "https://github.com/jeremyikwuje/bitpension-fedimint-module"
